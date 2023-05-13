@@ -1,5 +1,7 @@
 /12_section_basic_concepts/node_modules
 /12_section_basic_concepts/package-lock.json
+/14_01_sending_http_requests/node_modules
+/14_01_sending_http_requests/package-lock.json
 /.idea
 /nbproject
 .DS_Store

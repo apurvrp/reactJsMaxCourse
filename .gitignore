@@ -4,6 +4,8 @@
 /14_01_sending_http_requests/package-lock.json
 /15_01_custom_hooks/node_modules
 /15_01_custom_hooks/package-lock.json
+/15_02_cs_hooks_realistic_ex/node_modules
+/15_02_cs_hooks_realistic_ex/package-lock.json
 /.idea
 /nbproject
 .DS_Store

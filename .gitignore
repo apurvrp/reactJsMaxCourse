@@ -13,6 +13,7 @@
 /15_02_cs_hooks_realistict_ex_code/node_modules
 /15_02_cs_hooks_realistict_ex_code/package-lock.json
 
+/.vscode
 /.idea
 /nbproject
 .DS_Store

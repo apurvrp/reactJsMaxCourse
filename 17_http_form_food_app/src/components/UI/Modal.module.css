@@ -9,6 +9,7 @@
 }
 
 .modal {
+  overflow: auto;
   position: fixed;
   top: 20vh;
   left: 5%;

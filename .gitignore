@@ -16,6 +16,9 @@
 /16_forms_user_inputs/node_modules
 /16_forms_user_inputs/package-lock.json
 
+/17_http_form_food_app/node_modules
+/17_http_form_food_app/package-lock.json
+
 /.vscode
 /.idea
 /nbproject

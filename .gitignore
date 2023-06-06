@@ -19,6 +19,9 @@
 /17_http_form_food_app/node_modules
 /17_http_form_food_app/package-lock.json
 
+/redux_core_concept/node_modules
+/redux_core_concept/package-lock.json
+
 /.vscode
 /.idea
 /nbproject

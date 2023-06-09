@@ -25,6 +25,9 @@
 /18_redux_core_concept/node_modules
 /18_redux_core_concept/package-lock.json
 
+/19_advanced_redux/node_modules
+/19_advanced_redux/package-lock.json
+
 /.vscode
 /.idea
 /nbproject

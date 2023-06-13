@@ -28,6 +28,9 @@
 /19_advanced_redux/node_modules
 /19_advanced_redux/package-lock.json
 
+/21_multi_page_SPA_with_react_router/node_modules
+/21_multi_page_SPA_with_react_router/package-lock.json
+
 /.vscode
 /.idea
 /nbproject

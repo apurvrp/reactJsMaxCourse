@@ -7,6 +7,7 @@ import {
 import HomePage from "./pages/HomePage";
 import ProductsPage from "./pages/ProductsPage";
 import RootLayout from "./pages/Root";
+import ErrorPage from "./pages/Error";
 
 // https:://example.com/product => https:: => protocol, example.com => domain name, /product => router path
 
@@ -23,6 +24,7 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <RootLayout />,
+    errorElement: <ErrorPage />,
     children: [
       { path: "/", element: <HomePage /> },
       { path: "/products", element: <ProductsPage /> },

@@ -31,6 +31,11 @@
 /21_multi_page_SPA_with_react_router/node_modules
 /21_multi_page_SPA_with_react_router/package-lock.json
 
+/21_react_adv_router_project_01/backend/node_modules
+/21_react_adv_router_project_01/backend/package-lock.json
+/21_react_adv_router_project_01/frontend/node_modules
+/21_react_adv_router_project_01/frontend/package-lock.json
+
 /.vscode
 /.idea
 /nbproject

@@ -1,22 +1,14 @@
 import {
-  // Route,
   RouterProvider,
   createBrowserRouter,
   // createRoutesFromElements,
+  // Route,
 } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import ProductsPage from "./pages/ProductsPage";
+import RootLayout from "./pages/Root";
 
 // https:://example.com/product => https:: => protocol, example.com => domain name, /product => router path
-
-const router = createBrowserRouter([
-  { path: "/", element: <HomePage /> },
-  { path: "/products", element: <ProductsPage /> },
-]);
-
-function App() {
-  return <RouterProvider router={router} />;
-}
 
 // const routerDefinations = createRoutesFromElements(
 //   <Route>
@@ -27,8 +19,19 @@ function App() {
 
 // const router = createBrowserRouter(routerDefinations);
 
-// function App() {
-//   return <RouterProvider router={router} />;
-// }
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <RootLayout />,
+    children: [
+      { path: "/", element: <HomePage /> },
+      { path: "/products", element: <ProductsPage /> },
+    ],
+  },
+]);
+
+function App() {
+  return <RouterProvider router={router} />;
+}
 
 export default App;

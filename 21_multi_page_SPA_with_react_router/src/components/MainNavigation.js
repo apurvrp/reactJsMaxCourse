@@ -8,7 +8,7 @@ function MainNavigation(params) {
         <ul className={classes.list}>
           <li>
             <NavLink
-              to="/"
+              to=""
               className={({ isActive }) => (isActive ? classes.active : "")}
               //   style={({ isActive }) => ({
               //     textAlign: isActive ? "center" : "left",
@@ -20,7 +20,7 @@ function MainNavigation(params) {
           </li>
           <li>
             <NavLink
-              to="/products"
+              to="products"
               className={(isActive) => (isActive ? classes.active : "")}
             >
               Products

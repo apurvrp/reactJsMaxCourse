@@ -15,10 +15,6 @@ export async function action({ request }) {
     throw json({ message: "Unspported mode." }, { state: 422 });
   }
 
-  console.log("dsadsa", mode);
-
-  // return false;
-
   const data = await request.formData();
   const authData = {
     email: data.get("email"),

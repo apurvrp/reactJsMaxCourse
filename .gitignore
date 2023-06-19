@@ -46,6 +46,9 @@
 /22_adding_authentication/react-frontend/node_modules
 /22_adding_authentication/react-frontend/package-lock.json
 
+/23_deploying_react_app/node_modules
+/23_deploying_react_app/package-lock.json
+
 /.vscode
 /.idea
 /nbproject

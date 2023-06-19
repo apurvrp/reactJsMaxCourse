@@ -41,6 +41,11 @@
 /21_react_adv_router_project_02/react-frontend/node_modules
 /21_react_adv_router_project_02/react-frontend/package-lock.json
 
+/22_adding_authentication/backend-api/node_modules
+/22_adding_authentication/backend-api/package-lock.json
+/22_adding_authentication/react-frontend/node_modules
+/22_adding_authentication/react-frontend/package-lock.json
+
 /.vscode
 /.idea
 /nbproject

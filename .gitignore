@@ -49,6 +49,9 @@
 /23_deploying_react_app/node_modules
 /23_deploying_react_app/package-lock.json
 
+/24_nextjs_course/node_modules
+/24_nextjs_course/package-lock.json
+
 /.vscode
 /.idea
 /nbproject

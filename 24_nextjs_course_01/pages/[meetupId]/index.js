@@ -1,4 +1,4 @@
-import MeetupDetail from "../../components/meetups/MeetupDetail";
+import MeetupDetail from "../../components/meetups/MeetupDetails";
 
 function MeetupDetails() {
   return (

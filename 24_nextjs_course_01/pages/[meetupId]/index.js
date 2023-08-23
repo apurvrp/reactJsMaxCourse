@@ -1,6 +1,7 @@
-import { MongoClient, ObjectId } from "mongodb";
-import MeetupDetail from "../../components/meetups/MeetupDetails";
 import { Fragment } from "react";
+import { MongoClient, ObjectId } from "mongodb";
+import Head from "next/head";
+import MeetupDetail from "../../components/meetups/MeetupDetails";
 
 function MeetupDetails(props) {
   return (
@@ -50,7 +51,7 @@ export async function getStaticProps(context) {
   const db = client.db();
   const meetupsCollection = db.collection("meetups");
   const selectedMeetup = await meetupsCollection.findOne({
-    _id: ObjectId(meetupId),
+    _id: new ObjectId(meetupId),
   });
 
   client.close();

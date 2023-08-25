@@ -57,6 +57,11 @@
 /24_nextjs_course_01/package-lock.json
 /24_nextjs_course_01/.next
 
+
+/next_js_code_demo/node_modules
+/next_js_code_demo/package-lock.json
+/next_js_code_demo/.next
+
 /.vscode
 /.idea
 /nbproject

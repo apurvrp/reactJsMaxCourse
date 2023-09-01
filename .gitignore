@@ -62,9 +62,21 @@
 /next_js_code_demo/package-lock.json
 /next_js_code_demo/.next
 
+/25_animations_framer_motion/node_modules
+/25_animations_framer_motion/package-lock.json
+
 /.vscode
+/.vscode/*
+/!.vscode/extensions.json
 /.idea
 /nbproject
 .DS_Store
+
+/*.suo
+/*.ntvs*
+/*.njsproj
+/*.sln
+/*.sw?
+
 /.phpintel
 /~

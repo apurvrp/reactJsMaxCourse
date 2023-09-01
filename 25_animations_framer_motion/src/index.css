@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Lato:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&family=Lato:wght@400;700&display=swap");
 
 * {
   box-sizing: border-box;
@@ -6,7 +6,7 @@
 
 body {
   margin: 0;
-  font-family: 'Lato', serif;
+  font-family: "Lato", serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: linear-gradient(#222c31, #111d32);
@@ -33,7 +33,7 @@ body {
 }
 
 #main-header h1 {
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 1.5rem;
   color: #84b0fc;
 }
@@ -84,7 +84,7 @@ body {
   color: #fff;
   border-radius: 4px;
   text-decoration: none;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 0.8rem;
   font-weight: bold;
   text-transform: uppercase;
@@ -115,7 +115,7 @@ main {
   margin-bottom: 0.15rem;
   font-weight: bold;
   font-size: 0.8rem;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   color: #414956;
 }
 
@@ -129,7 +129,7 @@ main {
   background-color: #fff;
   color: #414956;
   font-size: 0.8rem;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
 }
 
 #new-challenge-images {
@@ -230,7 +230,7 @@ main {
 
 .challenge-item header p {
   margin-top: 0;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-size: 0.7rem;
 }
 
@@ -280,6 +280,7 @@ main {
   display: inline-block;
   font-size: 0.85rem;
   margin-left: 0.25rem;
+  transition: transform 0.3s ease-out;
 }
 
 .challenge-item-details.expanded .challenge-item-details-icon {
@@ -313,6 +314,18 @@ main {
   width: 30rem;
   max-width: 90%;
   z-index: 10;
+  animation: slide-up-fade-in 0.3s ease-out forwards;
+}
+
+@keyframes slide-up-fade-in {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(30px);
+    opacity: 1;
+  }
 }
 
 .modal h2 {

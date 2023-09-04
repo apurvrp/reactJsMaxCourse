@@ -65,6 +65,9 @@
 /25_animations_framer_motion/node_modules
 /25_animations_framer_motion/package-lock.json
 
+/25_1_framer_motion_playground/node_modules
+/25_1_framer_motion_playground/package-lock.json
+
 /.vscode
 /.vscode/*
 /!.vscode/extensions.json

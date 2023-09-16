@@ -74,6 +74,9 @@
 /26_02_animations_transition_group/node_modules
 /26_02_animations_transition_group/package-lock.json
 
+/27_01_replace_redux/node_modules
+/27_01_replace_redux/package-lock.json
+
 /.vscode
 /.vscode/*
 /!.vscode/extensions.json

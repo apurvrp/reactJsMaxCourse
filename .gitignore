@@ -80,6 +80,9 @@
 /27_02_replace_redux_optimize/node_modules
 /27_02_replace_redux_optimize/package-lock.json
 
+/27_03_multiple_state_cst_hook/node_modules
+/27_03_multiple_state_cst_hook/package-lock.json
+
 /.vscode
 /.vscode/*
 /!.vscode/extensions.json

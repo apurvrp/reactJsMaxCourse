@@ -77,6 +77,9 @@
 /27_01_replace_redux/node_modules
 /27_01_replace_redux/package-lock.json
 
+/27_02_replace_redux_optimize/node_modules
+/27_02_replace_redux_optimize/package-lock.json
+
 /.vscode
 /.vscode/*
 /!.vscode/extensions.json

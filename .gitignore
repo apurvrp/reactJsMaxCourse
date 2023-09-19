@@ -83,6 +83,9 @@
 /27_03_multiple_state_cst_hook/node_modules
 /27_03_multiple_state_cst_hook/package-lock.json
 
+/28_01_testing_react_app/node_modules
+/28_01_testing_react_app/package-lock.json
+
 /.vscode
 /.vscode/*
 /!.vscode/extensions.json

@@ -86,6 +86,9 @@
 /28_01_testing_react_app/node_modules
 /28_01_testing_react_app/package-lock.json
 
+/29_01_react_typescript/node_modules
+/29_01_react_typescript/package-lock.json
+
 /.vscode
 /.vscode/*
 /!.vscode/extensions.json

@@ -1,7 +1,7 @@
 import React from "react";
 
-const TodosItems = () => {
-  return <div></div>;
+const TodosItems: React.FC<{ text: string }> = (props) => {
+  return <li>{props.text}</li>;
 };
 
 export default TodosItems;

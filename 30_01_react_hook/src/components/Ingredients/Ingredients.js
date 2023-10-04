@@ -21,7 +21,7 @@ const Ingredients = () => {
       <section>
         <Search />
         {/* Need to add list here! */}
-        <IngredientList ingredients={userIngredients} />
+        <IngredientList ingredients={userIngredients} onRemoveItem={() => {}} />
       </section>
     </div>
   );

@@ -92,6 +92,9 @@
 /29_02_react_ts_start/node_modules
 /29_02_react_ts_start/package-lock.json
 
+/30_01_react_hook/node_modules
+/30_01_react_hook/package-lock.json
+
 /.vscode
 /.vscode/*
 /!.vscode/extensions.json

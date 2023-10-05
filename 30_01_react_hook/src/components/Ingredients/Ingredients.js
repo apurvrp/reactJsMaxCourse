@@ -50,9 +50,16 @@ const Ingredients = () => {
   };
 
   const deleteIngredientHandler = (ingreId) => {
-    setUserIngredients((lastIngredients) =>
-      lastIngredients.filter((ingredient) => ingredient.id !== ingreId)
-    );
+    fetch(
+      `https://testing-apis-46c25-default-rtdb.firebaseio.com/ingredients/${ingreId}.json`,
+      {
+        method: "DELETE",
+      }
+    ).then((response) => {
+      setUserIngredients((lastIngredients) =>
+        lastIngredients.filter((ingredient) => ingredient.id !== ingreId)
+      );
+    });
   };
 
   return (

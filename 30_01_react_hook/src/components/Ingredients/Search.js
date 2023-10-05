@@ -10,7 +10,7 @@ const Search = React.memo(({ onLoadIngredients }) => {
     const query =
       enteredFilter.length === 0
         ? ""
-        : `?orderBy="title"&equalTo=${enteredFilter}`;
+        : `?orderBy="title"&equalTo="${enteredFilter}"`;
     fetch(
       "https://testing-apis-46c25-default-rtdb.firebaseio.com/ingredients.json" +
         query

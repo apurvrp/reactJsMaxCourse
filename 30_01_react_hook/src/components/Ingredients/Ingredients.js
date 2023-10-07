@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useReducer, useState } from "react";
+import React, { useCallback, useEffect, useReducer /*useState*/ } from "react";
 
 import IngredientForm from "./IngredientForm";
 import IngredientList from "./IngredientList";
@@ -18,11 +18,33 @@ const ingredientReducer = (currentIngredients, action) => {
   }
 };
 
+const httpReducer = (currentHttpState, action) => {
+  switch (action.type) {
+    case "SEND":
+      return { loading: true, error: null };
+    case "RESPONSE":
+      return { ...currentHttpState, loading: false };
+
+    case "ERROR":
+      return { loading: false, error: action.errorMessage };
+
+    case "CLEAR": {
+      return { ...currentHttpState, error: null };
+    }
+    default:
+      throw new Error("Should not be reached!");
+  }
+};
+
 const Ingredients = () => {
   const [userIngredients, dispatch] = useReducer(ingredientReducer, []);
   // const [userIngredients, setUserIsngredients] = useState([]);
-  const [isLoading, setIsLoading] = useState(false);
-  const [isError, setIsError] = useState(null);
+  const [httpState, dispatchHttp] = useReducer(httpReducer, {
+    loading: false,
+    error: null,
+  });
+  // const [isLoading, setIsLoading] = useState(false);
+  // const [isError, setIsError] = useState(null);
 
   useEffect(() => {
     // fetch(
@@ -50,7 +72,8 @@ const Ingredients = () => {
   }, []);
 
   const addIngredientHandler = (ingredient) => {
-    setIsLoading(true);
+    // setIsLoading(true);
+    dispatchHttp({ type: "SEND" });
     fetch(
       "https://testing-apis-46c25-default-rtdb.firebaseio.com/ingredients.json",
       {
@@ -60,7 +83,8 @@ const Ingredients = () => {
       }
     )
       .then((response) => {
-        setIsLoading(false);
+        // setIsLoading(false);
+        dispatchHttp({ type: "RESPONSE" });
         return response.json;
       })
       .then((responseData) => {
@@ -74,13 +98,18 @@ const Ingredients = () => {
         });
       })
       .catch((error) => {
-        setIsError(error.message);
-        setIsLoading(false);
+        // setIsError(error.message);
+        // setIsLoading(false);
+        dispatchHttp({
+          type: "ERROR",
+          errorMessage: "Something went to  wrong",
+        });
       });
   };
 
   const deleteIngredientHandler = (ingreId) => {
-    setIsLoading(true);
+    // setIsLoading(true);
+    dispatchHttp({ type: "SEND" });
     fetch(
       `https://testing-apis-46c25-default-rtdb.firebaseio.com/ingredients/${ingreId}.json`,
       {
@@ -88,28 +117,36 @@ const Ingredients = () => {
       }
     )
       .then((response) => {
-        setIsLoading(false);
+        dispatchHttp({ type: "RESPONSE" });
+        // setIsLoading(false);
         // setUserIngredients((lastIngredients) =>
         //   lastIngredients.filter((ingredient) => ingredient.id !== ingreId)
         // );
         dispatch({ type: "DELETE", id: ingreId });
       })
       .catch((error) => {
-        setIsError(error.message);
-        setIsLoading(false);
+        // setIsError(error.message);
+        // setIsLoading(false);
+        dispatchHttp({
+          type: "ERROR",
+          errorMessage: "Something went to Wrong!",
+        });
       });
   };
 
   const clearError = () => {
-    setIsError(null);
+    // setIsError(null);
+    dispatchHttp({ type: "CLEAR" });
   };
 
   return (
     <div className="App">
-      {isError && <ErrorModal onClose={clearError}>{isError}</ErrorModal>}
+      {httpState.error && (
+        <ErrorModal onClose={clearError}>{httpState.error}</ErrorModal>
+      )}
       <IngredientForm
         onAddIngredient={addIngredientHandler}
-        loading={isLoading}
+        loading={httpState.loading}
       />
 
       <section>

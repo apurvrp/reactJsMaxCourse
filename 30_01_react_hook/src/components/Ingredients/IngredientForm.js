@@ -10,6 +10,8 @@ const IngredientForm = React.memo((props) => {
     amount: "",
   });
 
+  console.log("Rendering Ingredient Form");
+
   const onChangeInputState = (event) => {
     let declareInputObj = inputState;
     if (event.target.id === "title") {

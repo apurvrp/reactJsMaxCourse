@@ -1,7 +1,16 @@
 import React from "react";
+import produce from "immer";
 
 const javascript_basic_concepts = () => {
   const [userIngredients, setUserIngredients] = useState([]);
+
+  // For Immutation usecase us immer => produce
+  const setTestData = (state, { payload }) => {
+    return produce(state, (draft) => {
+      draft.testData = payload;
+      return draft;
+    });
+  };
 
   /* 
     API call via fetch functions and axios 

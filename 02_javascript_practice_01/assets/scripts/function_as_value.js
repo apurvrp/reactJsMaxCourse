@@ -14,8 +14,16 @@ setTimeout(() => {
   console.log("More timing out...");
 }, 4000);
 
-function greeter(greetFn) {
-  greetFn();
+function greeterNew(greetFn) {
+  greatFn();
 }
 
-greeter(() => console.log("Hi"));
+greeterNew(() => console.log("function pass as value"));
+
+function initialFn() {
+  function gretafn() {
+    console.log("function inside function");
+  }
+  gretafn(); // you exicute here not outside to this function
+}
+initialFn();

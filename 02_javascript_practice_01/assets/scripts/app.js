@@ -1,3 +1,3 @@
 import { apiKeys } from "./utils";
 
-console.log(apiKeys);
+console.log("apiKeys", apiKeys);

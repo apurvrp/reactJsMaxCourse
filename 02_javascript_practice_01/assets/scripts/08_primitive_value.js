@@ -6,7 +6,7 @@ let demoMessage = "Hellooooo!";
 
 demoMessage = "Helloooooo1";
 
-// References
+// References => Array and Objects are References
 const hobbies01 = ["Sports", "Cookings"];
 hobbies01.push("Working");
 console.log(hobbies01);

@@ -21,3 +21,16 @@ console.log(mappingData);
 
 const mappingObj = hobbies.map((item) => ({ text: item }));
 console.log(mappingObj);
+
+// Reduce
+
+const array1 = [1, 2, 3, 4];
+
+// 0 + 1 + 2 + 3 + 4
+const initialValue = 0;
+const sumWithInitial = array1.reduce((accumulator, currentValue) => {
+  console.log("aaa", accumulator, currentValue);
+  return accumulator + currentValue;
+}, initialValue);
+
+console.log(sumWithInitial);

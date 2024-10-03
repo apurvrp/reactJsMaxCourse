@@ -36,3 +36,7 @@
 2. [section_basic_concepts](https://github.com/apurvrp/reactJsMaxCourse/tree/main/12_section_basic_concepts)
 3. [sending_http_requests](https://github.com/apurvrp/reactJsMaxCourse/tree/main/14_01_sending_http_requests)
 4. [custom_hooks](https://github.com/apurvrp/reactJsMaxCourse/tree/main/15_01_custom_hooks)
+5. [forms_user_inputs](https://github.com/apurvrp/reactJsMaxCourse/tree/main/16_forms_user_inputs)
+6. [http_form_food_app](https://github.com/apurvrp/reactJsMaxCourse/tree/main/17_http_form_food_app)
+7. [redux_core_concept](https://github.com/apurvrp/reactJsMaxCourse/tree/main/18_redux_core_concept)
+8. [advanced_redux](https://github.com/apurvrp/reactJsMaxCourse/tree/main/19_advanced_redux)

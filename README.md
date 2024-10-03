@@ -15,8 +15,8 @@
 
 #### Recommended:
 
-Use `nvm` to install and manage different versions of nodejs on a single machine.
-If you have `nvm` installed on the machine, use `nvm use` command to automatically switch to the specific nodejs version required by the project (As defined in the `.nvmrc` file in the root folder)
+- Use `nvm` to install and manage different versions of nodejs on a single machine.
+- If you have `nvm` installed on the machine, use `nvm use` command to automatically switch to the specific nodejs version required by the project (As defined in the `.nvmrc` file in the root folder)
 
 #### Running the attached code
 
